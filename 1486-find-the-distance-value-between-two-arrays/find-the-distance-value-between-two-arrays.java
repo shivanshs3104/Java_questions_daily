@@ -19,7 +19,7 @@ class Solution {
         
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            if (arr[mid] >= from & arr[mid] <= to) {
+            if (arr[mid] >= from && arr[mid] <= to) {
                 return false;
             } else if (arr[mid] < from) {
                 start = mid + 1;
