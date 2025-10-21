@@ -9,7 +9,7 @@ class Solution {
         for (int i = 1; i < maxVal; i++)
             count[i] += count[i - 1];
 
-        int res = 1;
+        int res = 0;
         for (int i = 0; i < maxVal; i++) {
             int left = Math.max(0, i - k);
             int right = Math.min(maxVal - 1, i + k);
